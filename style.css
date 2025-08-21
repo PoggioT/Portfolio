@@ -146,6 +146,15 @@ header .container {
     font-size: 20px;
 }
 
+.about p {
+    line-height: 2;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 0 auto;
+    word-wrap: break-word;
+    
+}
+
 /* HABILIDADES */
 .skills-grid {
     display: grid;
