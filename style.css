@@ -72,7 +72,7 @@ header .container {
 
 /* HERO */
 #hero {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,7 +152,7 @@ header .container {
     margin: 0 auto;
     max-width: 0 auto;
     word-wrap: break-word;
-    
+
 }
 
 /* HABILIDADES */
