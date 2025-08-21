@@ -63,6 +63,7 @@ header .container {
 .menu a {
     color: #eaf4f4;
     transition: 0.3s;
+    width: auto
 }
 
 .menu a:hover {
