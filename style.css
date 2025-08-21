@@ -63,7 +63,6 @@ header .container {
 .menu a {
     color: #eaf4f4;
     transition: 0.3s;
-    font-size: 20px;
 }
 
 .menu a:hover {
