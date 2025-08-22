@@ -341,6 +341,7 @@ header .container {
     font-size: 1rem;
     background: #102a3b;
     color: #ffffff;
+    border: #0c494c solid 1px;
 }
 
 .contact-form textarea {
