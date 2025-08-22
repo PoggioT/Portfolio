@@ -10,6 +10,7 @@
     <link rel="icon" href="imagens/logo.png" sizes="32x32" type="image/png">
     <link rel="icon" href="imagens/logo.png" sizes="16x16" type="image/png">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -66,11 +67,30 @@
         <div class="container">
             <h2>Contato</h2>
             <form class="contact-form">
-                <input type="text" placeholder="Seu Nome" required>
-                <input type="email" placeholder="Seu Email" required>
-                <textarea placeholder="Sua Mensagem" required></textarea>
+                <input type="text" name="user_name" placeholder="Seu Nome" required>
+                <input type="email" name="user_email" placeholder="Seu Email" required>
+                <textarea name="message" placeholder="Sua Mensagem" required></textarea>
                 <button type="submit" class="btn">Enviar</button>
             </form>
+
+            <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+            <script>
+                (function(){
+                    emailjs.init("Cm8GbK1yn1C4MKnJO");
+                })();
+
+                document.getElementById('contact-form').addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    emailjs.sendForm('service_qrc8vii', 'template_ddyqgq8', this)
+                        .then(function() {
+                            alert('Mensagem enviada com sucesso! 🚀');
+                    }, function(error) {
+                        alert('Erro ao enviar mensagem ' + JSON.stringify(error));
+                    });
+                });
+            </script>
+
 
             <div class="socials">
                 <a href="https://www.linkedin.com/in/tarcio-poggio/" target="_blank"><i class='bx bxl-linkedin'></i></a>
