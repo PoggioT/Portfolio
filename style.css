@@ -158,14 +158,14 @@ header .container {
 
 
 /* SOBRE MIM */
-.about {
+/* .about {
     display: flex;
     align-items: center;
     gap: 40px;
     max-width: 1000px;
     margin: auto;
     flex-wrap: wrap;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 .about p {
@@ -175,8 +175,54 @@ header .container {
     max-width: 0 auto;
     word-wrap: break-word;
     word-spacing: -1px;
+} */
+
+#about {
+    font-family: 'Fira Code', monospace; /* Fonte estilo código */
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
 }
 
+#about .titulo {
+    color: #38f9d7; /* cor de destaque igual a do seu site */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about .codigo {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 28px;
+    line-height: 1.5em;
+    white-space: pre-line;
+}
+
+#about .codigo .azul {
+    color: #61dafb;
+}
+
+#about .codigo .verde {
+    color: #2ecc71;
+}
+
+#about .codigo .roxo {
+    color: #4ef0c3;
+}
+
+.cursor {
+    font-weight: bold;
+    animation: blink-animation 0.5s steps(5, start) infinite;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
 
 
 
