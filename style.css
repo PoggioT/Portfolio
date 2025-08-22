@@ -211,12 +211,12 @@ header .container {
 .socials {
     text-align: center;
     margin-top: 35px;
-}
+}   
 
 .socials a {
     color: #4ef0c3;
     font-size:4rem;
-    margin: 0 12px;
+    margin: 0 30px;
     transition: 0.3s;
 }
 
