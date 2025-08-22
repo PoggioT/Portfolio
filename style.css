@@ -42,12 +42,12 @@ header .container {
 .site-logo {
     height: 120px;
     width: auto;
-    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4));
     transition: transform 0.3s ease;
 }
 
 .site-logo:hover {
-    transform: scale(1.08);
+    transform: scale(1.5);
 }
 
 .menu {
