@@ -66,3 +66,20 @@ window.addEventListener("scroll", () => {
 backToTop.addEventListener("click", () => { 
     window.scrollTo({ top: 0, behavior: "smooth" }); 
 });
+
+// ===== Alternar visibilidade das habilidades =====
+function toggleSkills(id) {
+    const skillsContainer = document.getElementById(id + '-skills');
+    const allSkillsContainers = document.querySelectorAll('.skills-container');
+
+    // Fecha todos os containers, exceto o clicado
+    allSkillsContainers.forEach(container => {
+        if (container.id !== skillsContainer.id) {
+            container.classList.add('hidden');
+        }
+    });
+
+    // Alterna a visibilidade do container clicado
+    skillsContainer.classList.toggle('hidden');
+    }
+

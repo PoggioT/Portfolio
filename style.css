@@ -15,12 +15,20 @@ body {
     overflow-x: hidden;
 }
 
+
+
+
+
 /* CONTAINER PADRÃO */
 .container {
     max-width: 1100px;
     margin: auto;
     padding: 0 20px;
 }
+
+
+
+
 
 /* HEADER */
 header {
@@ -71,6 +79,10 @@ header .container {
 .menu a:hover {
     color: #4ef0c3;
 }
+
+
+
+
 
 /* HERO */
 #hero {
@@ -125,6 +137,10 @@ header .container {
     margin-bottom: 40px;
 }
 
+
+
+
+
 /* SEÇÕES */
 .section {
     padding: 90px 20px;
@@ -136,6 +152,10 @@ header .container {
     font-size: 2.2rem;
     color: #4ef0c3;
 }
+
+
+
+
 
 /* SOBRE MIM */
 .about {
@@ -157,34 +177,102 @@ header .container {
     word-spacing: -1px;
 }
 
+
+
+
+
 /* HABILIDADES */
-.skills-grid {
+.category-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 25px;
+    margin-top: 40px;
+    align-items: start;
 }
 
-.card {
+.category-card {
     background: rgba(255,255,255,0.04);
     padding: 25px;
     text-align: center;
     border-radius: 15px;
     transition: 0.3s;
-    box-shadow: 0 2px 4px #4ef0c3;
+    box-shadow: 0 1px 6px #4ef0c3;
+    cursor: pointer;
+    /* Alinha o conteúdo verticalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
 }
 
-.card i {
-    font-size: 2.5rem;
-    color: #4ef0c3;
+.category-card:hover {
+    transform: translateY(-6px);
+    background: rgba(78,240,195,0.1);
+    box-shadow: 0 2px 8px #4ef0c3;
+}
+
+.category-card i {
+    font-size: 4.0rem; /* Mantém o tamanho do ícone */
+    color: #4ef0c3; /* Mantém a cor */
     margin-bottom: 12px;
 }
 
-.card:hover {
-    transform: translateY(-6px);
-    background: rgba(78,240,195,0.1);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-    box-shadow: 0 2px 5px #4ef0c3;
+.skills-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, padding 0.3s ease;
+    margin-top: 0;   /* fecha junto */
+    padding: 0;      /* fecha junto */
 }
+
+/* quando ativo */
+.skills-container.show {
+    max-height: 500px; /* alto suficiente */
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.skills-container:not(.hidden) {
+    max-height: 500px; /* Valor alto para garantir que todo o conteúdo caiba */
+}
+
+.skill-item {
+    background: rgba(255,255,255,0.04);
+    border-radius: 15px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    box-shadow: 0 2px 6px #4ef0c3;
+    margin: 20px;
+}
+
+.skill-item:hover {
+    transform: translateY(-3px); /* Animação menor para destacar que são itens de uma lista */
+    background: rgba(78,240,195,0.1);
+    box-shadow: 0 2px 8px #4ef0c3;
+}
+
+.skill-item i {
+    font-size: 2.5rem; /* Ícones menores para as habilidades */
+    color: #4ef0c3;
+}
+
+.skill-item p {
+    font-size: 1em;
+    color: #fff;
+    margin: 0;
+}
+
+
+
+
 
 /* CONTATO */
 .contact-form {
@@ -228,6 +316,10 @@ header .container {
     transform: scale(1.1);
 }
 
+
+
+
+
 /* FOOTER */
 footer {
     text-align: center;
@@ -236,6 +328,10 @@ footer {
     font-size: 0.9rem;
     color: #c7d6d5;
 }
+
+
+
+
 
 /* ANIMAÇÕES */
 .fade-in, .slide-up {
@@ -248,6 +344,10 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+
+
 
 /* Botão voltar ao topo */
 .back-to-top {
@@ -271,3 +371,8 @@ footer {
 .back-to-top.visible {
     display: flex;
 }
+
+
+
+
+

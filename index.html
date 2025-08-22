@@ -46,21 +46,49 @@
     </section>
 
     <section id="skills" class="section fade-in">
-        <div class="container">
-            <h2>Minhas Habilidades</h2>
-            <div class="skills-grid">
-                <div class="card"><i class='bx bxl-html5'></i><p>HTML</p></div>
-                <div class="card"><i class='bx bxl-css3'></i><p>CSS</p></div>
-                <div class="card"><i class='bx bxl-javascript'></i><p>JavaScript</p></div>
-                <div class="card"><i class='bx bxl-python'></i><p>Python</p></div>
-                <div class="card"><i class='bx bxl-java'></i><p>Java</p></div>
-                <div class="card"><i class='bx bx-network-chart'></i><p>N8N & Integrações</p></div>
-                <div class="card"><i class='bx bxs-brain'></i><p>Inteligência Artificial</p></div>
-                <div class="card"><i class='bx bxl-docker'></i><p>Docker</p></div>
-                <div class="card"><i class='bx bxl-git'></i><p>Git</p></div>
-                <div class="card"><i class='bx bxl-postgresql'></i><p>PostgreSQL</p></div>
+    <div class="container">
+        <h2>Minhas Habilidades</h2>
+        <div class="category-grid">
+            
+            <div class="category-card" onclick="toggleSkills('frontend')">
+                <i class='bx bx-code-alt'></i>
+                <p>Frontend</p>
+                <div id="frontend-skills" class="skills-container hidden">
+                    <div class="skill-item"><i class='bx bxl-html5'></i><p>HTML</p></div>
+                    <div class="skill-item"><i class='bx bxl-css3'></i><p>CSS</p></div>
+                    <div class="skill-item"><i class='bx bxl-javascript'></i><p>JavaScript</p></div>
+                    </div>
+            </div>
+
+            <div class="category-card" onclick="toggleSkills('backend')">
+                <i class='bx bxs-data'></i>
+                <p>Backend</p>
+                <div id="backend-skills" class="skills-container hidden">
+                    <div class="skill-item"><i class='bx bxl-python'></i><p>Python</p></div>
+                    <div class="skill-item"><i class='bx bxl-java'></i><p>Java</p></div>
+                    </div>
+            </div>
+            
+            <div class="category-card" onclick="toggleSkills('database')">
+                <i class='bx bxs-server'></i>
+                <p>Bancos de Dados</p>
+                <div id="database-skills" class="skills-container hidden">
+                    <div class="skill-item"><i class='bx bxl-postgresql'></i><p>PostgreSQL</p></div>
+                    </div>
+            </div>
+
+            <div class="category-card" onclick="toggleSkills('tools')">
+                <i class='bx bxs-cog'></i>
+                <p>Ferramentas</p>
+                <div id="tools-skills" class="skills-container hidden">
+                    <div class="skill-item"><i class='bx bxs-brain'></i><p>Inteligência Artificial</p></div>
+                    <div class="skill-item"><i class='bx bx-network-chart'></i><p>N8N & Integrações</p></div>
+                    <div class="skill-item"><i class='bx bxl-docker'></i><p>Docker</p></div>
+                    <div class="skill-item"><i class='bx bxl-git'></i><p>Git</p></div>
+                    </div>
             </div>
         </div>
+    </div>
     </section>
 
     <section id="contact" class="section slide-up">
