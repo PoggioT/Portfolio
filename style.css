@@ -154,7 +154,7 @@ header .container {
     margin: 0 auto;
     max-width: 0 auto;
     word-wrap: break-word;
-
+    word-spacing: -1px;
 }
 
 /* HABILIDADES */
