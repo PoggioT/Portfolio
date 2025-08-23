@@ -198,7 +198,7 @@ header .container {
     background: rgba(255, 255, 255, 0.05);
     padding: 15px;
     border-radius: 30px;
-    font-size: 20px
+    font-size: 20px;
     line-height: 1.5em;
     white-space: pre-line;
 }
@@ -298,7 +298,6 @@ header .container {
     align-items: center;
     gap: 10px;
     transition: 0.3s;
-   
     margin: 20px;
 }
 
