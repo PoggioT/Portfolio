@@ -425,4 +425,21 @@ footer {
 }
 
 
+/* ScrollBar */
+::-webkit-scrollbar {
+    width: 10px; 
+}
+::-webkit-scrollbar-track {
+    background: #4ef0c3; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #0c494c; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(10, 25, 47);
+}
+
+
 
