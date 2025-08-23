@@ -19,6 +19,7 @@
                 <ul class="menu">
                     <li><a href="#about">Sobre Mim</a></li>
                     <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Projetos</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
@@ -26,7 +27,7 @@
     </header>
 
 
-
+<!-- HERO -->
     <section id="hero">
         <div class="hero-content fade-in">
             <img src="imagens/logo.png" alt="Logo de Poggio IT" class="avatar">
@@ -38,6 +39,7 @@
 
 
 
+<!-- SOBRE MIM -->
     <section id="about" class="section slide-up">
     <div class="container about">
         <div>
@@ -45,7 +47,8 @@
             <p class="codigo">
                 <span class="azul">const</span> <span class="verde">tarcioPoggio</span> = { <br>
                 &nbsp;&nbsp;<span class="roxo">texto</span>: "Sou um desenvolvedor full-stack que transforma desafios em soluções eficientes. Minha expertise se concentra na criação de sistemas integrados, desde a base de dados até a interface do usuário, com um olhar especial para a automação e a inteligência artificial.
-Meu objetivo é simples: utilizar a tecnologia para otimizar processos e gerar resultados tangíveis. Não se trata apenas de código, mas de construir ferramentas que fazem a diferença, oferecendo desempenho, escalabilidade e valor real.", <br>
+                
+                Meu objetivo é simples: utilizar a tecnologia para otimizar processos e gerar resultados tangíveis. Não se trata apenas de código, mas de construir ferramentas que fazem a diferença, oferecendo desempenho, escalabilidade e valor real.", <br>
                 };<span class="cursor">_</span>
             </p>
         </div>
@@ -53,27 +56,27 @@ Meu objetivo é simples: utilizar a tecnologia para otimizar processos e gerar r
     </section>
 
 
-
+<!-- HABILIDADES -->
     <section id="skills" class="section fade-in">
-    <div class="container">
-        <h2>Minhas Habilidades</h2>
-        <div class="category-grid">
-            <div class="category-card" onclick="toggleSkills('frontend')">
-                <i class='bx bx-code-alt'></i>
-                <p>Frontend</p>
-                <div id="frontend-skills" class="skills-container hidden">
-                    <div class="skill-item"><i class='bx bxl-html5'></i><p>HTML</p></div>
-                    <div class="skill-item"><i class='bx bxl-css3'></i><p>CSS</p></div>
-                    <div class="skill-item"><i class='bx bxl-javascript'></i><p>JavaScript</p></div>
+        <div class="container">
+            <h2>Minhas Habilidades</h2>
+            <div class="category-grid">
+                <div class="category-card" onclick="toggleSkills('frontend')">
+                    <i class='bx bx-code-alt'></i>
+                    <p>Frontend</p>
+                    <div id="frontend-skills" class="skills-container hidden">
+                        <div class="skill-item"><i class='bx bxl-html5'></i><p>HTML</p></div>
+                        <div class="skill-item"><i class='bx bxl-css3'></i><p>CSS</p></div>
+                        <div class="skill-item"><i class='bx bxl-javascript'></i><p>JavaScript</p></div>
                     </div>
             </div>
 
             <div class="category-card" onclick="toggleSkills('backend')">
                 <i class='bx bxs-data'></i>
-                <p>Backend</p>
-                <div id="backend-skills" class="skills-container hidden">
-                    <div class="skill-item"><i class='bx bxl-python'></i><p>Python</p></div>
-                    <div class="skill-item"><i class='bx bxl-java'></i><p>Java</p></div>
+                    <p>Backend</p>
+                    <div id="backend-skills" class="skills-container hidden">
+                        <div class="skill-item"><i class='bx bxl-python'></i><p>Python</p></div>
+                        <div class="skill-item"><i class='bx bxl-java'></i><p>Java</p></div>
                     </div>
             </div>
             
@@ -83,7 +86,7 @@ Meu objetivo é simples: utilizar a tecnologia para otimizar processos e gerar r
                 <div id="database-skills" class="skills-container hidden">
                     <div class="skill-item"><i class='bx bxs-cloud-upload'></i><p>MySQL</p></div>
                     <div class="skill-item"><i class='bx bxl-postgresql'></i><p>PostgreSQL</p></div>
-                    </div>
+                </div>
             </div>
 
             <div class="category-card" onclick="toggleSkills('tools')">
@@ -94,7 +97,7 @@ Meu objetivo é simples: utilizar a tecnologia para otimizar processos e gerar r
                     <div class="skill-item"><i class='bx bx-network-chart'></i><p>N8N & Integrações</p></div>
                     <div class="skill-item"><i class='bx bxl-docker'></i><p>Docker</p></div>
                     <div class="skill-item"><i class='bx bxl-git'></i><p>Git</p></div>
-                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -102,6 +105,16 @@ Meu objetivo é simples: utilizar a tecnologia para otimizar processos e gerar r
 
 
 
+<!-- PROJETOS -->
+    <section id="projects" class="section slide-up">
+        <div class="container">
+            <h2>Projetos Pessoais</h2>
+        </div>
+    </section>
+
+
+
+<!-- CONTATOS -->
     <section id="contact" class="section slide-up">
         <div class="container">
             <h2>Contatos</h2>
@@ -113,6 +126,7 @@ Meu objetivo é simples: utilizar a tecnologia para otimizar processos e gerar r
             </form>
 
             <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
             <script>
                 (function(){
                     emailjs.init("Cm8GbK1yn1C4MKnJO");
@@ -139,7 +153,7 @@ Meu objetivo é simples: utilizar a tecnologia para otimizar processos e gerar r
     </section>
 
 
-
+<!-- DIREITOS -->
     <footer>
         <p>© 2025 Tarcio Poggio - Todos os direitos reservados</p>
     </footer>
