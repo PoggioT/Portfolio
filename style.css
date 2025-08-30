@@ -29,7 +29,7 @@ body {
 
 /* HEADER */
 header {
-    position: fixed;
+    position: static;
     top: 0;
     width: 100%;
     background: rgba(10, 25, 47, 0.8);
