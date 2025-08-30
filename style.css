@@ -29,12 +29,12 @@ body {
 
 /* HEADER */
 header {
-    position: static;
+    position: fixed;
     top: 0;
     width: 100%;
     background: rgba(10, 25, 47, 0.8);
     backdrop-filter: blur(6px);
-    z-index: 1000;
+    /* z-index: 1000; */
     box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
@@ -80,6 +80,47 @@ header .container {
 }
 
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #eaf4f4; /* Cor do ícone */
+    font-size: 2.5rem; /* Tamanho do ícone */
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    /* 1. Esconda o menu de navegação tradicional */
+    .menu {
+        display: none; /* Esconde o menu de links */
+        position: absolute;
+        top: 80px; /* Logo abaixo do header */
+        left: 0;
+        width: 100%;
+        background-color: #1b263b; /* Fundo para o menu aberto */
+        flex-direction: column; /* Organiza os links em coluna */
+        align-items: center;
+        padding: 20px 0;
+        z-index: 999;
+    }
+
+    /* 2. Regra para MOSTRAR o menu quando ele tiver a classe 'active' */
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 15px 0; /* Espaçamento vertical entre os links */
+    }
+
+    /* 3. Mostre o botão hambúrguer */
+    .menu-toggle {
+        display: block; /* Torna o botão visível */
+    }
+}
+
+
 
 
 
@@ -93,6 +134,7 @@ header .container {
     text-align: center;
     background-size: cover;
     padding: 20px;
+    margin-top: 150px;
 }
 
 .hero-content h2 {

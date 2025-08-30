@@ -8,6 +8,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }); 
 }); 
 
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Seleciona o botão e o menu no documento
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    // 2. Verifica se ambos existem para evitar erros
+    if (menuToggle && menu) {
+        // 3. Adiciona um "ouvinte" de evento de clique ao botão
+        menuToggle.addEventListener('click', () => {
+            // 4. A cada clique, adiciona ou remove a classe 'active' do menu
+            menu.classList.toggle('active');
+        });
+    }
+});
+
+
+
+
+
 // ===== Animações de aparecer ao rolar a página ===== 
 const elements = document.querySelectorAll(".fade-in, .slide-up"); 
 
