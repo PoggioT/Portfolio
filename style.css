@@ -27,8 +27,6 @@ body {
 
 
 
-
-
 /* HEADER */
 header {
     position: static;
@@ -49,7 +47,7 @@ header .container {
 .site-logo {
     height: 120px;
     width: auto;
-    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.187));
     transition: transform 0.3s ease;
 }
 
@@ -81,40 +79,6 @@ header .container {
     color: #4ef0c3;
 }
 
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .menu-toggle {
-        display: block;
-        background: transparent;
-        border: none;
-        color: #4ef0c3;
-        font-size: 1.1rem;
-        cursor: pointer;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        transition: 0.3s;
-        align-self: flex-end;
-    }
-    
-    .menu {
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        margin-top: 15px;
-    }
-    
-    .menu.open {
-        display: flex;
-    }
-    
-    .menu li {
-        margin: 10px 0;
-    }
-}
 
 
 
@@ -127,13 +91,12 @@ header .container {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(135deg, #060925, #084141);
     background-size: cover;
     padding: 20px;
 }
 
 .hero-content h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     margin-bottom: 15px;
 }
 
@@ -166,10 +129,10 @@ header .container {
 }
 
 .avatar {
-    width: 400px;
-    height: 400px;
+    width: 340px;
+    height: 340px;
     border-radius: 50%;
-    box-shadow: 0 2px 5px #4ef0c3;
+    box-shadow: 0 2px 5px #3a5b52;
     margin-bottom: 40px;
 }
 
@@ -191,32 +154,6 @@ header .container {
     margin-top: 50px;
 }
     
-
-
-
-
-
-
-/* SOBRE MIM */
-/* .about {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    max-width: 1000px;
-    margin: auto;
-    flex-wrap: wrap;
-    font-size: 40px;
-}
-
-.about p {
-    line-height: 2;
-    text-align: justify;
-    margin: 0 auto;
-    max-width: 0 auto;
-    word-wrap: break-word;
-    word-spacing: -1px;
-} */
-
 
 #about {
     font-family: 'Fira Code', monospace; /* Fonte estilo código */

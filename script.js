@@ -28,6 +28,7 @@ function checkScroll() {
 window.addEventListener("scroll", checkScroll); 
 checkScroll(); // executa ao carregar 
 
+
 // ===== Validação simples do formulário de contato ===== 
 const form = document.querySelector(".contact-form"); 
 
