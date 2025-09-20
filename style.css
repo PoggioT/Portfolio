@@ -34,9 +34,8 @@ header {
     width: 100%;
     background: rgba(10, 25, 47, 0.8);
     backdrop-filter: blur(6px);
-    /* z-index: 1000; */
+    z-index: 1000;
     box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-    background-image: url(imagens/logofundo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -139,7 +138,6 @@ header .container {
     text-align: center;
     background-size: cover;
     padding: 20px;
-    margin-top: 50px;
 }
 
 .hero-content h2 {
@@ -196,7 +194,7 @@ header .container {
     text-align: center;
     font-size: 2.2rem;
     color: #4ef0c3;
-    border-top: white solid 1px;
+    border-top: #4ef0c3 solid 1px;
     padding: 100px 0px 20px 0px;
     margin-top: 50px;
 }
