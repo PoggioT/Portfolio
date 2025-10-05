@@ -27,6 +27,10 @@ body {
 
 
 
+
+
+
+
 /* HEADER */
 header {
     position: static;
@@ -88,41 +92,41 @@ header .container {
     display: none;
     background: none;
     border: none;
-    color: #eaf4f4; /* Cor do ícone */
-    font-size: 2.5rem; /* Tamanho do ícone */
+    color: #eaf4f4; 
+    font-size: 2.5rem; 
     cursor: pointer;
 }
 
 @media (max-width: 768px) {
 
-    /* 1. Esconda o menu de navegação tradicional */
     .menu {
-        display: none; /* Esconde o menu de links */
+        display: none; 
         position: absolute;
-        top: 80px; /* Logo abaixo do header */
+        top: 80px; 
         left: 0;
         width: 100%;
-        background-color: #1b263b; /* Fundo para o menu aberto */
-        flex-direction: column; /* Organiza os links em coluna */
+        background-color: #1b263b; 
+        flex-direction: column; 
         align-items: center;
         padding: 20px 0;
         z-index: 999;
     }
 
-    /* 2. Regra para MOSTRAR o menu quando ele tiver a classe 'active' */
+
     .menu.active {
         display: flex;
     }
 
     .menu li {
-        margin: 15px 0; /* Espaçamento vertical entre os links */
+        margin: 15px 0; 
     }
 
-    /* 3. Mostre o botão hambúrguer */
+
     .menu-toggle {
-        display: block; /* Torna o botão visível */
+        display: block; 
     }
 }
+
 
 
 
@@ -164,7 +168,7 @@ header .container {
     font-weight: bold;
     transition: 0.3s;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    text-decoration: none; /* Adicionado para links com a classe btn */
+    text-decoration: none; 
     font-size: 20px;
 }
 
@@ -180,6 +184,7 @@ header .container {
     box-shadow: 0 2px 5px #3a5b52;
     margin-bottom: 40px;
 }
+
 
 
 
@@ -201,14 +206,14 @@ header .container {
     
 
 #about {
-    font-family: 'Fira Code', monospace; /* Fonte estilo código */
+    font-family: 'Fira Code', monospace; 
     padding: 20px;
     border-radius: 8px;
     color: #fff;
 }
 
 #about .titulo {
-    color: #38f9d7; /* cor de destaque igual a do seu site */
+    color: #38f9d7; 
     text-align: center;
     margin-bottom: 20px;
 }
@@ -253,6 +258,7 @@ header .container {
 
 
 
+
 /* HABILIDADES */
 .category-grid {
     display: grid;
@@ -269,7 +275,6 @@ header .container {
     border-radius: 15px;
     transition: 0.3s;
     cursor: pointer;
-    /* Alinha o conteúdo verticalmente */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,8 +289,8 @@ header .container {
 }
 
 .category-card i {
-    font-size: 4.0rem; /* Mantém o tamanho do ícone */
-    color: #4ef0c3; /* Mantém a cor */
+    font-size: 4.0rem; 
+    color: #4ef0c3; 
     margin-bottom: 12px;
 }
 
@@ -293,13 +298,13 @@ header .container {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out, padding 0.3s ease;
-    margin-top: 0;   /* fecha junto */
-    padding: 0;      /* fecha junto */
+    margin-top: 0;  
+    padding: 0;   
 }
 
-/* quando ativo */
+
 .skills-container.show {
-    max-height: 500px; /* alto suficiente */
+    max-height: 500px; 
     margin-top: 20px;
     padding: 10px 0;
 }
@@ -309,7 +314,7 @@ header .container {
 }
 
 .skills-container:not(.hidden) {
-    max-height: 500px; /* Valor alto para garantir que todo o conteúdo caiba */
+    max-height: 500px; 
 }
 
 .skill-item {
@@ -324,13 +329,13 @@ header .container {
 }
 
 .skill-item:hover {
-    transform: translateY(-3px); /* Animação menor para destacar que são itens de uma lista */
+    transform: translateY(-3px); 
     background: rgba(78,240,195,0.1);
     box-shadow: 0 2px 8px #4ef0c3;
 }
 
 .skill-item i {
-    font-size: 2.5rem; /* Ícones menores para as habilidades */
+    font-size: 2.5rem; 
     color: #4ef0c3;
 }
 
@@ -341,13 +346,169 @@ header .container {
 }
 
 
+
+
+
+
+
+
 /* PROJETOS */
 #projects p {
-    color: #ffd900;
+    color: #fffb00;
     text-align: center;
     font-size: 20px;
     margin-top: 60px;
 }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.project-card {
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease-out;
+    background: #1b263b; 
+}
+
+.project-card:hover {
+    transform: translateY(-8px); 
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    transition: opacity 0.4s ease;
+}
+
+.project-card:hover img {
+    opacity: 0.7; 
+}
+
+.project-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    padding: 12px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(to top, rgba(13, 27, 42, 0.98), rgba(27, 38, 59, 0.8));
+    
+    opacity: 0;
+    transition: opacity 0.4s ease;
+
+    overflow-y: auto; 
+    scrollbar-width: thin; 
+    scrollbar-color: #4ef0c3 transparent; 
+}
+
+.project-info::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.project-info::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.project-info::-webkit-scrollbar-thumb {
+    background-color: #4ef0c3; 
+    border-radius: 4px; 
+    border: 2px solid transparent; 
+}
+
+
+.project-card:hover .project-info {
+    opacity: 1; 
+}
+
+.project-info h3 {
+    color: #4ef0c3; 
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.project-info p {
+    font-size: 0.95rem; 
+    line-height: 1.4; 
+    margin-bottom: 15px;
+    padding: 0 10px; 
+}
+
+.project-tags {
+    margin-bottom: 20px;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 8px; 
+}
+
+.project-tags span {
+    background: rgba(78, 240, 195, 0.15); 
+    color: #5effd3; 
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    display: inline-block;
+}
+
+.project-links {
+    margin-top: auto; 
+}
+
+.project-links a {
+    color: #eaf4f4;
+    text-decoration: none;
+    background: #0d1b2a;
+    padding: 8px 18px;
+    margin: 0 8px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+    border: 1px solid #4ef0c3;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+.project-links a:hover {
+    background: #4ef0c3;
+    color: #0d1b2a;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        height: 280px; 
+    }
+    .project-info h3 {
+        font-size: 1.2rem;
+    }
+    .project-info p {
+        font-size: 0.9rem;
+        padding: 0 5px;
+    }
+    .project-links a {
+        padding: 6px 14px;
+        font-size: 0.9rem;
+        margin: 0 5px;
+    }
+}
+
+
+
+
+
 
 
 /* CONTATO */
@@ -397,6 +558,8 @@ header .container {
 
 
 
+
+
 /* FOOTER */
 footer {
     text-align: center;
@@ -405,6 +568,8 @@ footer {
     font-size: 0.9rem;
     color: #c7d6d5;
 }
+
+
 
 
 
@@ -422,16 +587,11 @@ footer {
     transform: translateY(0);
 }
 
-
-
-
-
-/* Botão voltar ao topo */
 .back-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #4ef0c3; /* Cor alterada para combinar com a paleta */
+    background: #4ef0c3; 
     color: #0d1b2a;
     border: none;
     border-radius: 50%;
@@ -448,6 +608,11 @@ footer {
 .back-to-top.visible {
     display: flex;
 }
+
+
+
+
+
 
 
 /* ScrollBar */

@@ -103,3 +103,36 @@ function toggleSkills(id) {
     skillsContainer.classList.toggle('hidden');
     }
 
+
+
+
+
+// ===== HOVER PROJETOS =====
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+    // Lógica para os cards de projeto com delay
+    const projectCards = document.querySelectorAll('.project-card');
+    const delay = 1500; // Tempo em milissegundos (1.5 segundos)
+
+    projectCards.forEach(card => {
+        let leaveTimer; // Variável para guardar o nosso temporizador
+
+        // Evento para quando o mouse entra no card
+        card.addEventListener('mouseenter', () => {
+            // Se houver um timer para remover a classe, cancele-o
+            clearTimeout(leaveTimer);
+            // Adiciona a classe ativa imediatamente
+            card.classList.add('is-active');
+        });
+
+        // Evento para quando o mouse sai do card
+        card.addEventListener('mouseleave', () => {
+            // Inicia um timer para remover a classe após o 'delay'
+            leaveTimer = setTimeout(() => {
+                card.classList.remove('is-active');
+            }, delay);
+        });
+    });
+
+});
