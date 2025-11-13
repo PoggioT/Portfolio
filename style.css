@@ -108,7 +108,7 @@ header .container {
         background-color: #1b263b; 
         flex-direction: column; 
         align-items: center;
-        padding: 20px 0;
+        padding: 18px 0;
         z-index: 999;
     }
 
@@ -193,7 +193,8 @@ header .container {
 
 /* SEÇÕES */
 .section {
-    padding: 90px 20px;
+    padding: 60px 20px;
+    margin-top: 120px;
 }
 
 .section h2 {
